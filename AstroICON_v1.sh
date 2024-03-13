@@ -7,7 +7,7 @@ TUESDAY_MARS_=1
 WEDNESDAY_MERCURY_=0
 THURSDAY_JUPITER_=0
 FRIDAY_VENUS_=0
-SATURNDAY_SATURN_=0
+SATURDAY_SATURN_=0
 SUNDAY_SUN_=0
 PLANETARY_HOURS_CHART_=0
 
@@ -45,7 +45,7 @@ case $day_number in
     3) day_var="WEDNESDAY_MERCURY_" ;;
     4) day_var="THURSDAY_JUPITER_" ;;
     5) day_var="FRIDAY_VENUS_" ;;
-    6) day_var="SATURNDAY_SATURN_" ;;
+    6) day_var="SATURDAY_SATURN_" ;;
     7) day_var="SUNDAY_SUN_" ;;
     8) day_var="PLANETARY_HOURS_CHART_" ;;
     *)
@@ -374,7 +374,7 @@ check_time $start24 $start1 $MOON
 echo
 }
 
-SATURNDAY_SATURN(){
+SATURDAY_SATURN(){
 check_time $start1 $start2 $SATURN
 check_time $start2 $start3 $JUPITER
 check_time $start3 $start4 $MARS
@@ -482,8 +482,8 @@ if [ "$FRIDAY_VENUS_" -eq 1 ]; then
     FRIDAY_VENUS
 fi
 
-if [ "$SATURNDAY_SATURN_" -eq 1 ]; then
-    SATURNDAY_SATURN
+if [ "$SATURDAY_SATURN_" -eq 1 ]; then
+    SATURDAY_SATURN
 fi
 
 if [ "$SUNDAY_SUN_" -eq 1 ]; then
