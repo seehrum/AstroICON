@@ -9,10 +9,12 @@ THURSDAY_JUPITER_=0
 FRIDAY_VENUS_=0
 SATURNDAY_SATURN_=0
 SUNDAY_SUN_=0
+PLANETARY_HOURS_CHART_=0
 
 DAY_OF_WEEK_=1
 
 # CONFIGURE
+# Use the 24-hour time format
 
 HOUR_SUNRISE="06"
 MINUTES_SUNRISE="11"
@@ -45,10 +47,11 @@ case $day_number in
     5) day_var="FRIDAY_VENUS_" ;;
     6) day_var="SATURNDAY_SATURN_" ;;
     7) day_var="SUNDAY_SUN_" ;;
+    8) day_var="PLANETARY_HOURS_CHART_" ;;
     *)
       # Se day_number foi definido mas não é válido
       if [[ ! -z "$day_number" ]]; then
-        echo "Invalid day number. Please provide a number from 1 to 7."
+        echo "Invalid day number. Please provide a number from 1 to 8."
         exit 1
       fi
       ;;
@@ -429,6 +432,36 @@ check_time $start24 $start1 $MERCURY # Looping back to start for 05:08 - 06:11
 echo
 }
 
+PLANETARY_HOURS_CHART(){
+printf "     DAY-----------M---T---W---T---F---S---S-\n"
+printf "%-2s - %-11s | ☽ | ♂ | ☿ | ♃ | ♀ | ♄ | ☉ |\n" "1" "$hour_day_1"
+printf "%-2s - %-11s | ♄ | ☉ | ☽ | ♂ | ☿ | ♃ | ♀ |\n" "2" "$hour_day_2"
+printf "%-2s - %-11s | ♃ | ♀ | ♄ | ☉ | ☽ | ♂ | ☿ |\n" "3" "$hour_day_3"
+printf "%-2s - %-11s | ♂ | ☿ | ♃ | ♀ | ♄ | ☉ | ☽ |\n" "4" "$hour_day_4"
+printf "%-2s - %-11s | ☉ | ☽ | ♂ | ☿ | ♃ | ♀ | ♄ |\n" "5" "$hour_day_5"
+printf "%-2s - %-11s | ♀ | ♄ | ☉ | ☽ | ♂ | ☿ | ♃ |\n" "6" "$hour_day_6"
+printf "%-2s - %-11s | ☿ | ♃ | ♀ | ♄ | ☉ | ☽ | ♂ |\n" "7" "$hour_day_7"
+printf "%-2s - %-11s | ☽ | ♂ | ☿ | ♃ | ♀ | ♄ | ☉ |\n" "8" "$hour_day_8"
+printf "%-2s - %-11s | ♄ | ☉ | ☽ | ♂ | ☿ | ♃ | ♀ |\n" "9" "$hour_day_9"
+printf "%-2s - %-11s | ♃ | ♀ | ♄ | ☉ | ☽ | ♂ | ☿ |\n" "10" "$hour_day_10"
+printf "%-2s - %-11s | ♂ | ☿ | ♃ | ♀ | ♄ | ☉ | ☽ |\n" "11" "$hour_day_11"
+printf "%-2s - %-11s | ☉ | ☽ | ♂ | ☿ | ♃ | ♀ | ♄ |\n" "12" "$hour_day_12"
+printf "%-2s   NIGHT---------S---M---T---W---T---F---S-|\n"
+printf "%-2s - %-11s | ♀ | ♄ | ☉ | ☽ | ♂ | ☿ | ♃ |\n" "1" "$hour_night_1"
+printf "%-2s - %-11s | ☿ | ♃ | ♀ | ♄ | ☉ | ☽ | ♂ |\n" "2" "$hour_night_2"
+printf "%-2s - %-11s | ☽ | ♂ | ☿ | ♃ | ♀ | ♄ | ☉ |\n" "3" "$hour_night_3"
+printf "%-2s - %-11s | ♄ | ☉ | ☽ | ♂ | ☿ | ♃ | ♀ |\n" "4" "$hour_night_4"
+printf "%-2s - %-11s | ♃ | ♀ | ♄ | ☉ | ☽ | ♂ | ☿ |\n" "5" "$hour_night_5"
+printf "%-2s - %-11s | ♂ | ☿ | ♃ | ♀ | ♄ | ☉ | ☽ |\n" "6" "$hour_night_6"
+printf "%-2s - %-11s | ☉ | ☽ | ♂ | ☿ | ♃ | ♀ | ♄ |\n" "7" "$hour_night_7"
+printf "%-2s - %-11s | ♀ | ♄ | ☉ | ☽ | ♂ | ☿ | ♃ |\n" "8" "$hour_night_8"
+printf "%-2s - %-11s | ☿ | ♃ | ♀ | ♄ | ☉ | ☽ | ♂ |\n" "9" "$hour_night_9"
+printf "%-2s - %-11s | ☽ | ♂ | ☿ | ♃ | ♀ | ♄ | ☉ |\n" "10" "$hour_night_10"
+printf "%-2s - %-11s | ♄ | ☉ | ☽ | ♂ | ☿ | ♃ | ♀ |\n" "11" "$hour_night_11"
+printf "%-2s - %-11s | ♃ | ♀ | ♄ | ☉ | ☽ | ♂ | ☿ |\n" "12" "$hour_night_12"
+}
+
+
 if [ "$MONDAY_MOON_" -eq 1 ]; then
     MONDAY_MOON
 fi
@@ -455,4 +488,8 @@ fi
 
 if [ "$SUNDAY_SUN_" -eq 1 ]; then
     SUNDAY_SUN
+fi
+
+if [ "$PLANETARY_HOURS_CHART_" -eq 1 ]; then
+    PLANETARY_HOURS_CHART
 fi
