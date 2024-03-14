@@ -243,204 +243,204 @@ check_time() {
 }
 
 MONDAY_MOON(){
-check_time $start1 $start2 $MOON
-check_time $start2 $start3 $SATURN
-check_time $start3 $start4 $JUPITER
-check_time $start4 $start5 $MARS
-check_time $start5 $start6 $SUN
-check_time $start6 $start7 $VENUS
-check_time $start7 $start8 $MERCURY
-check_time $start8 $start9 $MOON
-check_time $start9 $start10 $SATURN
-check_time $start10 $start11 $JUPITER
-check_time $start11 $start12 $MARS
-check_time $start12 $start13 $SUN
-check_time $start13 $start14 $VENUS
-check_time $start14 $start15 $MERCURY
-check_time $start15 $start16 $MOON
-check_time $start16 $start17 $SATURN
-check_time $start17 $start18 $JUPITER
-check_time $start18 $start19 $MARS
-check_time $start19 $start20 $SUN
-check_time $start20 $start21 $VENUS
-check_time $start21 $start22 $MERCURY
-check_time $start22 $start23 $MOON
-check_time $start23 $start24 $SATURN
-check_time $start24 $start1 $JUPITER
+check_time "$start1" "$start2" "$MOON"
+check_time "$start2" "$start3" "$SATURN"
+check_time "$start3" "$start4" "$JUPITER"
+check_time "$start4" "$start5" "$MARS"
+check_time "$start5" "$start6" "$SUN"
+check_time "$start6" "$start7" "$VENUS"
+check_time "$start7" "$start8" "$MERCURY"
+check_time "$start8" "$start9" "$MOON"
+check_time "$start9" "$start10" "$SATURN"
+check_time "$start10" "$start11" "$JUPITER"
+check_time "$start11" "$start12" "$MARS"
+check_time "$start12" "$start13" "$SUN"
+check_time "$start13" "$start14" "$VENUS"
+check_time "$start14" "$start15" "$MERCURY"
+check_time "$start15" "$start16" "$MOON"
+check_time "$start16" "$start17" "$SATURN"
+check_time "$start17" "$start18" "$JUPITER"
+check_time "$start18" "$start19" "$MARS"
+check_time "$start19" "$start20" "$SUN"
+check_time "$start20" "$start21" "$VENUS"
+check_time "$start21" "$start22" "$MERCURY"
+check_time "$start22" "$start23" "$MOON"
+check_time "$start23" "$start24" "$SATURN"
+check_time "$start24" "$start1" "$JUPITER"
 # If no icons have been printed, it means the current time is outside of the specified intervals
 echo
 }
 
 TUESDAY_MARS(){
-check_time $start1 $start2 $MARS
-check_time $start2 $start3 $SUN
-check_time $start3 $start4 $VENUS
-check_time $start4 $start5 $MERCURY
-check_time $start5 $start6 $MOON
-check_time $start6 $start7 $SATURN
-check_time $start7 $start8 $JUPITER
-check_time $start8 $start9 $MARS
-check_time $start9 $start10 $SUN
-check_time $start10 $start11 $VENUS
-check_time $start11 $start12 $MERCURY
-check_time $start12 $start13 $MOON
-check_time $start13 $start14 $SATURN
-check_time $start14 $start15 $JUPITER
-check_time $start15 $start16 $MARS
-check_time $start16 $start17 $SUN
-check_time $start17 $start18 $VENUS
-check_time $start18 $start19 $MERCURY
-check_time $start19 $start20 $MOON
-check_time $start20 $start21 $SATURN
-check_time $start21 $start22 $JUPITER
-check_time $start22 $start23 $MARS
-check_time $start23 $start24 $SUN
-check_time $start24 $start1 $VENUS
+check_time "$start1" "$start2" "$MARS"
+check_time "$start2" "$start3" "$SUN"
+check_time "$start3" "$start4" "$VENUS"
+check_time "$start4" "$start5" "$MERCURY"
+check_time "$start5" "$start6" "$MOON"
+check_time "$start6" "$start7" "$SATURN"
+check_time "$start7" "$start8" "$JUPITER"
+check_time "$start8" "$start9" "$MARS"
+check_time "$start9" "$start10" "$SUN"
+check_time "$start10" "$start11" "$VENUS"
+check_time "$start11" "$start12" "$MERCURY"
+check_time "$start12" "$start13" "$MOON"
+check_time "$start13" "$start14" "$SATURN"
+check_time "$start14" "$start15" "$JUPITER"
+check_time "$start15" "$start16" "$MARS"
+check_time "$start16" "$start17" "$SUN"
+check_time "$start17" "$start18" "$VENUS"
+check_time "$start18" "$start19" "$MERCURY"
+check_time "$start19" "$start20" "$MOON"
+check_time "$start20" "$start21" "$SATURN"
+check_time "$start21" "$start22" "$JUPITER"
+check_time "$start22" "$start23" "$MARS"
+check_time "$start23" "$start24" "$SUN"
+check_time "$start24" "$start1" "$VENUS"
 # If no icons have been printed, it means the current time is outside of the specified intervals
 echo
 }
 
 WEDNESDAY_MERCURY(){
-check_time $start1 $start2 $MERCURY
-check_time $start2 $start3 $MOON
-check_time $start3 $start4 $SATURN
-check_time $start4 $start5 $JUPITER
-check_time $start5 $start6 $MARS
-check_time $start6 $start7 $SUN
-check_time $start7 $start8 $VENUS
-check_time $start8 $start9 $MERCURY
-check_time $start9 $start10 $MOON
-check_time $start10 $start11 $SATURN
-check_time $start11 $start12 $JUPITER
-check_time $start12 $start13 $MARS
-check_time $start13 $start14 $SUN
-check_time $start14 $start15 $VENUS
-check_time $start15 $start16 $MERCURY
-check_time $start16 $start17 $MOON
-check_time $start17 $start18 $SATURN
-check_time $start18 $start19 $JUPITER
-check_time $start19 $start20 $MARS
-check_time $start20 $start21 $SUN
-check_time $start21 $start22 $VENUS
-check_time $start22 $start23 $MERCURY
-check_time $start23 $start24 $MOON
-check_time $start24 $start1 $SATURN
+check_time "$start1" "$start2" "$MERCURY"
+check_time "$start2" "$start3" "$MOON"
+check_time "$start3" "$start4" "$SATURN"
+check_time "$start4" "$start5" "$JUPITER"
+check_time "$start5" "$start6" "$MARS"
+check_time "$start6" "$start7" "$SUN"
+check_time "$start7" "$start8" "$VENUS"
+check_time "$start8" "$start9" "$MERCURY"
+check_time "$start9" "$start10" "$MOON"
+check_time "$start10" "$start11" "$SATURN"
+check_time "$start11" "$start12" "$JUPITER"
+check_time "$start12" "$start13" "$MARS"
+check_time "$start13" "$start14" "$SUN"
+check_time "$start14" "$start15" "$VENUS"
+check_time "$start15" "$start16" "$MERCURY"
+check_time "$start16" "$start17" "$MOON"
+check_time "$start17" "$start18" "$SATURN"
+check_time "$start18" "$start19" "$JUPITER"
+check_time "$start19" "$start20" "$MARS"
+check_time "$start20" "$start21" "$SUN"
+check_time "$start21" "$start22" "$VENUS"
+check_time "$start22" "$start23" "$MERCURY"
+check_time "$start23" "$start24" "$MOON"
+check_time "$start24" "$start1" "$SATURN"
 # If no icons have been printed, it means the current time is outside of the specified intervals
 echo
 }
 
 THURSDAY_JUPITER(){
-check_time $start1 $start2 $JUPITER
-check_time $start2 $start3 $MARS
-check_time $start3 $start4 $SUN
-check_time $start4 $start5 $VENUS
-check_time $start5 $start6 $MERCURY
-check_time $start6 $start7 $MOON
-check_time $start7 $start8 $SATURN
-check_time $start8 $start9 $JUPITER
-check_time $start9 $start10 $MARS
-check_time $start10 $start11 $SUN
-check_time $start11 $start12 $VENUS
-check_time $start12 $start13 $MERCURY
-check_time $start13 $start14 $MOON
-check_time $start14 $start15 $SATURN
-check_time $start15 $start16 $JUPITER
-check_time $start16 $start17 $MARS
-check_time $start17 $start18 $SUN
-check_time $start18 $start19 $VENUS
-check_time $start19 $start20 $MERCURY
-check_time $start20 $start21 $MOON
-check_time $start21 $start22 $SATURN
-check_time $start22 $start23 $JUPITER
-check_time $start23 $start24 $MARS
-check_time $start24 $start1 $SUN
+check_time "$start1" "$start2" "$JUPITER"
+check_time "$start2" "$start3" "$MARS"
+check_time "$start3" "$start4" "$SUN"
+check_time "$start4" "$start5" "$VENUS"
+check_time "$start5" "$start6" "$MERCURY"
+check_time "$start6" "$start7" "$MOON"
+check_time "$start7" "$start8" "$SATURN"
+check_time "$start8" "$start9" "$JUPITER"
+check_time "$start9" "$start10" "$MARS"
+check_time "$start10" "$start11" "$SUN"
+check_time "$start11" "$start12" "$VENUS"
+check_time "$start12" "$start13" "$MERCURY"
+check_time "$start13" "$start14" "$MOON"
+check_time "$start14" "$start15" "$SATURN"
+check_time "$start15" "$start16" "$JUPITER"
+check_time "$start16" "$start17" "$MARS"
+check_time "$start17" "$start18" "$SUN"
+check_time "$start18" "$start19" "$VENUS"
+check_time "$start19" "$start20" "$MERCURY"
+check_time "$start20" "$start21" "$MOON"
+check_time "$start21" "$start22" "$SATURN"
+check_time "$start22" "$start23" "$JUPITER"
+check_time "$start23" "$start24" "$MARS"
+check_time "$start24" "$start1" "$SUN"
 # If no icons have been printed, it means the current time is outside of the specified intervals
 echo
 }
 
 FRIDAY_VENUS(){
-check_time $start1 $start2 $VENUS
-check_time $start2 $start3 $MERCURY
-check_time $start3 $start4 $MOON
-check_time $start4 $start5 $SATURN
-check_time $start5 $start6 $JUPITER
-check_time $start6 $start7 $MARS
-check_time $start7 $start8 $SUN
-check_time $start8 $start9 $VENUS
-check_time $start9 $start10 $MERCURY
-check_time $start10 $start11 $MOON
-check_time $start11 $start12 $SATURN
-check_time $start12 $start13 $JUPITER
-check_time $start13 $start14 $MARS
-check_time $start14 $start15 $SUN
-check_time $start15 $start16 $VENUS
-check_time $start16 $start17 $MERCURY
-check_time $start17 $start18 $MOON
-check_time $start18 $start19 $SATURN
-check_time $start19 $start20 $JUPITER
-check_time $start20 $start21 $MARS
-check_time $start21 $start22 $SUN
-check_time $start22 $start23 $VENUS
-check_time $start23 $start24 $MERCURY
-check_time $start24 $start1 $MOON
+check_time "$start1" "$start2" "$VENUS"
+check_time "$start2" "$start3" "$MERCURY"
+check_time "$start3" "$start4" "$MOON"
+check_time "$start4" "$start5" "$SATURN"
+check_time "$start5" "$start6" "$JUPITER"
+check_time "$start6" "$start7" "$MARS"
+check_time "$start7" "$start8" "$SUN"
+check_time "$start8" "$start9" "$VENUS"
+check_time "$start9" "$start10" "$MERCURY"
+check_time "$start10" "$start11" "$MOON"
+check_time "$start11" "$start12" "$SATURN"
+check_time "$start12" "$start13" "$JUPITER"
+check_time "$start13" "$start14" "$MARS"
+check_time "$start14" "$start15" "$SUN"
+check_time "$start15" "$start16" "$VENUS"
+check_time "$start16" "$start17" "$MERCURY"
+check_time "$start17" "$start18" "$MOON"
+check_time "$start18" "$start19" "$SATURN"
+check_time "$start19" "$start20" "$JUPITER"
+check_time "$start20" "$start21" "$MARS"
+check_time "$start21" "$start22" "$SUN"
+check_time "$start22" "$start23" "$VENUS"
+check_time "$start23" "$start24" "$MERCURY"
+check_time "$start24" "$start1" "$MOON"
 # If no icons have been printed, it means the current time is outside of the specified intervals
 echo
 }
 
 SATURDAY_SATURN(){
-check_time $start1 $start2 $SATURN
-check_time $start2 $start3 $JUPITER
-check_time $start3 $start4 $MARS
-check_time $start4 $start5 $SUN
-check_time $start5 $start6 $VENUS
-check_time $start6 $start7 $MERCURY
-check_time $start7 $start8 $MOON
-check_time $start8 $start9 $SATURN
-check_time $start9 $start10 $JUPITER
-check_time $start10 $start11 $MARS
-check_time $start11 $start12 $SUN
-check_time $start12 $start13 $VENUS
-check_time $start13 $start14 $MERCURY
-check_time $start14 $start15 $MOON
-check_time $start15 $start16 $SATURN
-check_time $start16 $start17 $JUPITER
-check_time $start17 $start18 $MARS
-check_time $start18 $start19 $SUN
-check_time $start19 $start20 $VENUS
-check_time $start20 $start21 $MERCURY
-check_time $start21 $start22 $MOON
-check_time $start22 $start23 $SATURN
-check_time $start23 $start24 $JUPITER
-check_time $start24 $start1 $MARS
+check_time "$start1" "$start2" "$SATURN"
+check_time "$start2" "$start3" "$JUPITER"
+check_time "$start3" "$start4" "$MARS"
+check_time "$start4" "$start5" "$SUN"
+check_time "$start5" "$start6" "$VENUS"
+check_time "$start6" "$start7" "$MERCURY"
+check_time "$start7" "$start8" "$MOON"
+check_time "$start8" "$start9" "$SATURN"
+check_time "$start9" "$start10" "$JUPITER"
+check_time "$start10" "$start11" "$MARS"
+check_time "$start11" "$start12" "$SUN"
+check_time "$start12" "$start13" "$VENUS"
+check_time "$start13" "$start14" "$MERCURY"
+check_time "$start14" "$start15" "$MOON"
+check_time "$start15" "$start16" "$SATURN"
+check_time "$start16" "$start17" "$JUPITER"
+check_time "$start17" "$start18" "$MARS"
+check_time "$start18" "$start19" "$SUN"
+check_time "$start19" "$start20" "$VENUS"
+check_time "$start20" "$start21" "$MERCURY"
+check_time "$start21" "$start22" "$MOON"
+check_time "$start22" "$start23" "$SATURN"
+check_time "$start23" "$start24" "$JUPITER"
+check_time "$start24" "$start1" "$MARS"
 # If no icons have been printed, it means the current time is outside of the specified intervals
 echo
 }
 
 SUNDAY_SUN(){
-check_time $start1 $start2 $SUN
-check_time $start2 $start3 $VENUS
-check_time $start3 $start4 $MERCURY
-check_time $start4 $start5 $MOON
-check_time $start5 $start6 $SATURN
-check_time $start6 $start7 $JUPITER
-check_time $start7 $start8 $MARS
-check_time $start8 $start9 $SUN
-check_time $start9 $start10 $VENUS
-check_time $start10 $start11 $MERCURY
-check_time $start11 $start12 $MOON
-check_time $start12 $start13 $SATURN
-check_time $start13 $start14 $JUPITER
-check_time $start14 $start15 $MARS
-check_time $start15 $start16 $SUN
-check_time $start16 $start17 $VENUS
-check_time $start17 $start18 $MERCURY
-check_time $start18 $start19 $MOON
-check_time $start19 $start20 $SATURN
-check_time $start20 $start21 $JUPITER
-check_time $start21 $start22 $MARS
-check_time $start22 $start23 $SUN
-check_time $start23 $start24 $VENUS
-check_time $start24 $start1 $MERCURY # Looping back to start for 05:08 - 06:11
+check_time "$start1" "$start2" "$SUN"
+check_time "$start2" "$start3" "$VENUS"
+check_time "$start3" "$start4" "$MERCURY"
+check_time "$start4" "$start5" "$MOON"
+check_time "$start5" "$start6" "$SATURN"
+check_time "$start6" "$start7" "$JUPITER"
+check_time "$start7" "$start8" "$MARS"
+check_time "$start8" "$start9" "$SUN"
+check_time "$start9" "$start10" "$VENUS"
+check_time "$start10" "$start11" "$MERCURY"
+check_time "$start11" "$start12" "$MOON"
+check_time "$start12" "$start13" "$SATURN"
+check_time "$start13" "$start14" "$JUPITER"
+check_time "$start14" "$start15" "$MARS"
+check_time "$start15" "$start16" "$SUN"
+check_time "$start16" "$start17" "$VENUS"
+check_time "$start17" "$start18" "$MERCURY"
+check_time "$start18" "$start19" "$MOON"
+check_time "$start19" "$start20" "$SATURN"
+check_time "$start20" "$start21" "$JUPITER"
+check_time "$start21" "$start22" "$MARS"
+check_time "$start22" "$start23" "$SUN"
+check_time "$start23" "$start24" "$VENUS"
+check_time "$start24" "$start1" "$MERCURY"
 # If no icons have been printed, it means the current time is outside of the specified intervals
 echo
 }
