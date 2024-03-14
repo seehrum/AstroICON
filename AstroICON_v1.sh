@@ -3,9 +3,9 @@
 # 1=ON 0=FF
 
 MONDAY_MOON_=0
-TUESDAY_MARS_=1
+TUESDAY_MARS_=0
 WEDNESDAY_MERCURY_=0
-THURSDAY_JUPITER_=0
+THURSDAY_JUPITER_=1
 FRIDAY_VENUS_=0
 SATURDAY_SATURN_=0
 SUNDAY_SUN_=0
@@ -222,10 +222,23 @@ start24="$hour_night_12"
 # Get current time in HH:MM format
 current_time=$(date +%H:%M)
 
-# Function to check if current time is within a time interval
 check_time() {
-    if [[ "$current_time" > $1 ]] && [[ "$current_time" < $2 ]]; then
-        echo -n $3
+    # Converting hours to minutes since midnight for easier comparison
+    local start_minutes=$((10#${1:0:2} * 60 + 10#${1:3:2}))
+    local end_minutes=$((10#${2:0:2} * 60 + 10#${2:3:2}))
+    local current_minutes=$((10#${current_time:0:2} * 60 + 10#${current_time:3:2}))
+
+    # Handles the case of an interval that crosses midnight
+    if [[ "$end_minutes" -le "$start_minutes" ]]; then
+        # If the current time is before midnight and the interval ends after midnight
+        if [[ "$current_minutes" -gt "$start_minutes" || "$current_minutes" -lt "$end_minutes" ]]; then
+            echo -n "$3"
+        fi
+    else
+        # Normal interval, which doesn't cross midnight
+        if [[ "$current_minutes" -gt "$start_minutes" && "$current_minutes" -lt "$end_minutes" ]]; then
+            echo -n "$3"
+        fi
     fi
 }
 
