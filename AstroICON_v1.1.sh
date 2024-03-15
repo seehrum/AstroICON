@@ -73,6 +73,13 @@ if [[ -n "$day_var" ]]; then
 fi
 
 # Threshold time for day transition
+# TRANSITION_THRESHOLD defines the time at which the day transitions to the next planetary day.
+# This is set to the sunrise time of the current day. The script uses this threshold to determine
+# if the current time (NOW_TIME) is before sunrise, which indicates that the planetary influence
+# still belongs to the previous day. For example, if it is currently 5:00 AM and sunrise is at 6:11 AM,
+# the planetary day is considered to be the one from the day before. This adjustment ensures
+# the correct planetary day and hours are calculated based on the natural cycle of sunrise and sunset,
+# aligning the script's output with traditional astrological practices.
 TRANSITION_THRESHOLD="$HOUR_SUNRISE:$MINUTES_SUNRISE"
 
 # Get current time
