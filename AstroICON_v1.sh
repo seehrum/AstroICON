@@ -47,7 +47,17 @@ case $day_number in
     5) day_var="FRIDAY_VENUS_" ;;
     6) day_var="SATURDAY_SATURN_" ;;
     7) day_var="SUNDAY_SUN_" ;;
-    8) day_var="PLANETARY_HOURS_CHART_" ;;
+    8) day_var="PLANETARY_HOURS_CHART_" 
+        # Desabilita todas as variáveis
+        MONDAY_MOON_=0
+        TUESDAY_MARS_=0
+        WEDNESDAY_MERCURY_=0
+        THURSDAY_JUPITER_=0
+        FRIDAY_VENUS_=0
+        SATURDAY_SATURN_=0
+        SUNDAY_SUN_=0
+		DAY_OF_WEEK_=0
+        ;;
     *)
       # Se day_number foi definido mas não é válido
       if [[ -n "$day_number" ]]; then
@@ -56,6 +66,7 @@ case $day_number in
       fi
       ;;
 esac
+
 
 if [[ -n "$day_var" ]]; then
   declare "$day_var=1"
@@ -334,7 +345,6 @@ SUNDAY_SUN() {
 }
 
 PLANETARY_HOURS_CHART(){
-echo
 printf "     DAY-----------M---T---W---T---F---S---S--\n"
 printf "%-2s - %-11s | ☽ | ♂ | ☿ | ♃ | ♀ | ♄ | ☉ |\n" "1" "$hour_day_1"
 printf "%-2s - %-11s | ♄ | ☉ | ☽ | ♂ | ☿ | ♃ | ♀ |\n" "2" "$hour_day_2"
