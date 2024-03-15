@@ -5,13 +5,13 @@
 MONDAY_MOON_=0
 TUESDAY_MARS_=0
 WEDNESDAY_MERCURY_=0
-THURSDAY_JUPITER_=0
+THURSDAY_JUPITER_=1
 FRIDAY_VENUS_=0
 SATURDAY_SATURN_=0
 SUNDAY_SUN_=0
 PLANETARY_HOURS_CHART_=0
 
-DAY_OF_WEEK_=0
+DAY_OF_WEEK_=1
 
 # CONFIGURE
 # Use the 24-hour time format
@@ -48,7 +48,7 @@ case $day_number in
     6) day_var="SATURDAY_SATURN_" ;;
     7) day_var="SUNDAY_SUN_" ;;
     8) day_var="PLANETARY_HOURS_CHART_" 
-        # Desabilita todas as variáveis
+        # Disables all variables
         MONDAY_MOON_=0
         TUESDAY_MARS_=0
         WEDNESDAY_MERCURY_=0
@@ -59,7 +59,7 @@ case $day_number in
 		DAY_OF_WEEK_=0
         ;;
     *)
-      # Se day_number foi definido mas não é válido
+      # If day_number was set but is not valid
       if [[ -n "$day_number" ]]; then
         echo "Invalid day number. Please provide a number from 1 to 8."
         exit 1
@@ -256,11 +256,11 @@ check_time() {
 
 
 MONDAY_MOON(){
-    # Definindo os horários de início e os planetas em arrays
+    # Defining the start times and the planets in arrays
     starts=("$start1" "$start2" "$start3" "$start4" "$start5" "$start6" "$start7" "$start8" "$start9" "$start10" "$start11" "$start12" "$start13" "$start14" "$start15" "$start16" "$start17" "$start18" "$start19" "$start20" "$start21" "$start22" "$start23" "$start24")
     planets=("$MOON" "$SATURN" "$JUPITER" "$MARS" "$SUN" "$VENUS" "$MERCURY" "$MOON" "$SATURN" "$JUPITER" "$MARS" "$SUN" "$VENUS" "$MERCURY" "$MOON" "$SATURN" "$JUPITER" "$MARS" "$SUN" "$VENUS" "$MERCURY" "$MOON" "$SATURN" "$JUPITER")
 
-    # Loop para chamar check_time para cada par de horários e planetas
+    # Loop to call check_time for each pair of times and planets
     for ((i = 0; i < ${#starts[@]}; i++)); do
         next_index=$(( (i + 1) % ${#starts[@]} ))
         check_time "${starts[i]}" "${starts[next_index]}" "${planets[i]}"
