@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # Configuration to enable (1) or disable (0) specific day's functionality
-MONDAY_MOON_=0
-TUESDAY_MARS_=0
-WEDNESDAY_MERCURY_=0
-THURSDAY_JUPITER_=0
-FRIDAY_VENUS_=1
-SATURDAY_SATURN_=0
-SUNDAY_SUN_=0
-PLANETARY_HOURS_CHART_=0
+MONDAY_MOON_="0"
+TUESDAY_MARS_="0"
+WEDNESDAY_MERCURY_="0"
+THURSDAY_JUPITER_="0"
+FRIDAY_VENUS_="0"
+SATURDAY_SATURN_="0"
+SUNDAY_SUN_="0"
+PLANETARY_HOURS_CHART_="0"
 
-DAY_OF_WEEK_=1
+DAY_OF_WEEK_="0"
 
 # Sunrise and sunset time configuration in 24-hour format
 HOUR_SUNRISE="06"
