@@ -49,7 +49,7 @@ case $day_number in
     1) echo -n "$MOON" ; day_var="MONDAY_MOON_" ;;
     2) echo -n "$MARS" ; day_var="TUESDAY_MARS_" ;;
     3) echo -n "$MERCURY" ; day_var="WEDNESDAY_MERCURY_" ;;
-    4) echo -n "$MERCURY" ; day_var="THURSDAY_JUPITER_" ;;
+    4) echo -n "$JUPITER" ; day_var="THURSDAY_JUPITER_" ;;
     5) echo -n "$VENUS" ; day_var="FRIDAY_VENUS_" ;;
     6) echo -n "$SATURN" ; day_var="SATURDAY_SATURN_" ;;
     7) echo -n "$SUN" ; day_var="SUNDAY_SUN_" ;;
