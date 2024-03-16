@@ -5,12 +5,12 @@ MONDAY_MOON_="0"
 TUESDAY_MARS_="0"
 WEDNESDAY_MERCURY_="0"
 THURSDAY_JUPITER_="0"
-FRIDAY_VENUS_="0"
+FRIDAY_VENUS_="1"
 SATURDAY_SATURN_="0"
 SUNDAY_SUN_="0"
 PLANETARY_HOURS_CHART_="0"
 
-DAY_OF_WEEK_="0"
+DAY_OF_WEEK_="1"
 
 # Sunrise and sunset time configuration in 24-hour format
 HOUR_SUNRISE="06"
@@ -42,22 +42,17 @@ if [[ $# -gt 0 ]]; then
     DAY_OF_WEEK_=0
 fi
 
-# Parse command-line argument for specific day
-if [[ "$1" == "-d" ]]; then
-  day_number="$2"
-else
-  day_number="$1"
-fi
+day_number="$1"
 
 # Set variable for the specific day
 case $day_number in
-    1) day_var="MONDAY_MOON_" ;;
-    2) day_var="TUESDAY_MARS_" ;;
-    3) day_var="WEDNESDAY_MERCURY_" ;;
-    4) day_var="THURSDAY_JUPITER_" ;;
-    5) day_var="FRIDAY_VENUS_" ;;
-    6) day_var="SATURDAY_SATURN_" ;;
-    7) day_var="SUNDAY_SUN_" ;;
+    1) echo -n "$MOON" ; day_var="MONDAY_MOON_" ;;
+    2) echo -n "$MARS" ; day_var="TUESDAY_MARS_" ;;
+    3) echo -n "$MERCURY" ; day_var="WEDNESDAY_MERCURY_" ;;
+    4) echo -n "$MERCURY" ; day_var="THURSDAY_JUPITER_" ;;
+    5) echo -n "$VENUS" ; day_var="FRIDAY_VENUS_" ;;
+    6) echo -n "$SATURN" ; day_var="SATURDAY_SATURN_" ;;
+    7) echo -n "$SUN" ; day_var="SUNDAY_SUN_" ;;
     8) day_var="PLANETARY_HOURS_CHART_"  ;;
 	*)
       # If day_number was set but is not valid
