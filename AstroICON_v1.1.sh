@@ -10,7 +10,7 @@ SATURDAY_SATURN_="0"
 SUNDAY_SUN_="0"
 PLANETARY_HOURS_CHART_="0"
 
-DAY_OF_WEEK_="1"
+DAY_OF_WEEK_=1
 
 # Sunrise and sunset time configuration in 24-hour format
 HOUR_SUNRISE="06"
