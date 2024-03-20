@@ -1,0 +1,73 @@
+About AstroICON
+
+AstroICON is a Bash script designed to display planetary symbols corresponding to the current day of the week and planetary hours. It also generates a comprehensive table showing the planetary hours for each day. This tool integrates astrology concepts with daily planning, offering a unique way to visualize the planetary influences on different days and times.
+Installation
+
+    Download the AstroICON_v1.2A.sh script to your local machine.
+    Ensure the script has execute permissions:
+
+    bash
+
+    chmod +x AstroICON_v1.2A.sh
+
+Configuration
+File Naming
+
+The script’s file name must match the configuration in the FILE variable. Ensure that the FILE variable in the script is set correctly:
+
+bash
+
+FILE="AstroICON_v1.2A.sh"
+
+Time Settings
+
+Configure the sunrise, sunset, and next day's sunrise times in 24-hour format using the following variables:
+
+bash
+
+HOUR_SUNRISE="06"        # Example: 06 for 6 AM
+MINUTES_SUNRISE="30"     # Example: 30 for 30 minutes past the hour
+HOUR_SUNSET="18"         # Example: 18 for 6 PM
+MINUTES_SUNSET="00"      # Example: 00 for the top of the hour
+HOUR_SUNRISE_OF_NEXT_DAY="06"
+MINUTES_SUNRISE_OF_NEXT_DAY="30"
+
+Adjust these values according to local sunrise and sunset times for accurate planetary hour calculations.
+Usage
+
+Run the script with a numerical parameter to display the symbol for the current day or the planetary hours table:
+
+bash
+
+./AstroICON_v1.2A.sh [number]
+
+Where [number] can be:
+
+    1 for Monday (Moon day)
+    2 for Tuesday (Mars day)
+    3 for Wednesday (Mercury day)
+    4 for Thursday (Jupiter day)
+    5 for Friday (Venus day)
+    6 for Saturday (Saturn day)
+    7 for Sunday (Sun day)
+    8 to display the complete table of planetary hours
+
+Features
+
+    Daily Symbol Display: The script automatically calculates and displays the planetary symbol for the current day.
+    Planetary Hours Calculation: It calculates and shows the planetary hours for any selected day, based on the sunrise and sunset times.
+    Automatic Configuration: In this version (v1.2A), the configuration for the day of the week and planetary hours is handled automatically.
+
+Advanced Usage
+
+To see the planetary hours for the current day without specifying a parameter, simply run:
+
+bash
+
+./AstroICON_v1.2A.sh
+
+The script will determine the current day and calculate the respective planetary hours accordingly.
+Troubleshooting
+
+Ensure that the time settings are correctly configured to match your local timezone and daylight saving time adjustments. Incorrect times can lead to inaccurate planetary hour calculations.
+Updating
