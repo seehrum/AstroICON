@@ -5,7 +5,7 @@
 #IMPORTANT (The day variables must not exceed line 15): this version of the program is automatic and uses sed to configure the variables according to the day of the week, it does not require manual configuration, only the sunrise, sunset and next sunrise times must be configured manually.
 MONDAY_MOON_=0
 TUESDAY_MARS_=0
-WEDNESDAY_MERCURY_=1
+WEDNESDAY_MERCURY_=0
 THURSDAY_JUPITER_=0
 FRIDAY_VENUS_=0
 SATURDAY_SATURN_=0
