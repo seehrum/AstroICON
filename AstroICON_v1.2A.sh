@@ -2,7 +2,7 @@
 
 # Configuration section: Enables or disables functionality for each day of the week and for the planetary hours chart.
 # Set to 1 to enable or 0 to disable the functionality for the respective day or feature. 
-#IMPORTANT: this version of the program is automatic and uses sed to configure the variables according to the day of the week, it does not require manual configuration, only the sunrise, sunset and next sunrise times must be configured manually.
+#IMPORTANT (The day variables must not exceed line 15): this version of the program is automatic and uses sed to configure the variables according to the day of the week, it does not require manual configuration, only the sunrise, sunset and next sunrise times must be configured manually.
 MONDAY_MOON_=0
 TUESDAY_MARS_=0
 WEDNESDAY_MERCURY_=1
