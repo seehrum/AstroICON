@@ -13,7 +13,7 @@ SUNDAY_SUN_=0
 PLANETARY_HOURS_CHART_=0
 
 # The name defined by the FILE variable must be the same as the file name
-FILE="AstroICON_v1.2A"
+FILE="AstroICON_v1.2A.sh"
 
 # Variable to control the display of the current day's planet symbol.
 DAY_OF_WEEK_=1
