@@ -4,10 +4,10 @@
 # Set to 1 to enable or 0 to disable the functionality for the respective day or feature.
 MONDAY_MOON_=0
 TUESDAY_MARS_=0
-WEDNESDAY_MERCURY_=0
+WEDNESDAY_MERCURY_=1
 THURSDAY_JUPITER_=0
 FRIDAY_VENUS_=0
-SATURDAY_SATURN_=1
+SATURDAY_SATURN_=0
 SUNDAY_SUN_=0
 PLANETARY_HOURS_CHART_=0
 
@@ -67,7 +67,7 @@ NIGHT_PERIOD=$((NIGHT_MINUTES / 12))
 hour_day_1=$(date -d "$HOUR_SUNRISE:$MINUTES_SUNRISE today + 0 minutes" +'%H:%M')
 
 for i in {2..12}; do
-  minutes_x=$(echo "$DAYLIGHT_PERIOD * ($i - 1)" | bc)
+  minutes_x=$(( "$DAYLIGHT_PERIOD" * ($i - 1) ))
   hour_day=$(date -d "$HOUR_SUNRISE:$MINUTES_SUNRISE today + ${minutes_x} minutes" +'%H:%M')
   eval "hour_day_$i='$hour_day'"
 done
@@ -76,7 +76,7 @@ done
 hour_night_1=$(date -d "$HOUR_SUNSET:$MINUTES_SUNSET today + 0 minutes" +'%H:%M')
 
 for i in {2..12}; do
-  minutes_nx=$(echo "$NIGHT_PERIOD * ($i - 1)" | bc)
+  minutes_nx=$(( "$NIGHT_PERIOD" * ($i - 1) ))
   hour_night=$(date -d "$HOUR_SUNSET:$MINUTES_SUNSET today + ${minutes_nx} minutes" +'%H:%M')
   eval "hour_night_$i='$hour_night'"
 done
