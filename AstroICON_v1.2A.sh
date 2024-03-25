@@ -127,7 +127,7 @@ day_of_week="$CURRENT_WEEKDAY"
 # Assign the corresponding planet symbol to the current day.
 # Use sed to set the variable corresponding to the current day to 1 within the first 15 lines
 case $day_of_week in
-    1) symbol="$MOON" ; sed -i '1,15s/MONDAY_MOON_=0/MONDAY_MOON_=1/' ;;
+    1) symbol="$MOON" ; sed -i '1,15s/MONDAY_MOON_=0/MONDAY_MOON_=1/' $FILE ;;
     2) symbol="$MARS" ; sed -i '1,15s/TUESDAY_MARS_=0/TUESDAY_MARS_=1/' "$FILE" ;;
     3) symbol="$MERCURY" ; sed -i '1,15s/WEDNESDAY_MERCURY_=0/WEDNESDAY_MERCURY_=1/' "$FILE" ;;
     4) symbol="$JUPITER" ; sed -i '1,15s/THURSDAY_JUPITER_=0/THURSDAY_JUPITER_=1/' "$FILE" ;;
